@@ -7,15 +7,15 @@ app.get("/", (req, res) => {
 });
 
 app.get("/home", (req, res) => {
-  res.sendFile(__dirname + "/view/home.html")
+  res.sendFile(__dirname + "/view/home.html");
 });
 
 app.get("/about", (req, res) => {
-  res.send("About");
+  res.sendFile(__dirname + "/view/about.html");
 });
 
 app.get("/works", (req, res) => {
-  res.send("Works");
+  res.sendFile(__dirname + "/view/works.html");
 });
 
 app.listen(port, () => {
