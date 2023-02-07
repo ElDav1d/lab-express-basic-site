@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/home", (req, res) => {
-  res.send("Home");
+  res.sendFile(__dirname + "/view/home.html")
 });
 
 app.get("/about", (req, res) => {
